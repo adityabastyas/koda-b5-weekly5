@@ -1,7 +1,8 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-const url =
-  "https://api.themoviedb.org/3/movie/now_playing?api_key=6cdecc1372bfdcdd015f791bdfa22813";
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
+
+const url = `https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}`;
 
 export const fetchMovies = createAsyncThunk("movies/fetchMovies", async () => {
   const res = await fetch(url);

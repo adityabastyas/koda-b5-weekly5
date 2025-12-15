@@ -3,7 +3,7 @@ import { useParams } from "react-router";
 import Footer from "../component/Footer";
 import Header from "../component/Header";
 
-const API_KEY = "6cdecc1372bfdcdd015f791bdfa22813";
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
 function MovieDetail() {
   const { id } = useParams();

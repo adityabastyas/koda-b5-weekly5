@@ -26,7 +26,7 @@ function Header() {
   }, []);
 
   return (
-    <div className="sticky top-0 flex h-[91px] items-center justify-between px-6">
+    <div className="sticky top-0 flex h-[91px] items-center justify-between px-6 md:px-[130px]">
       <img className="h-[37px] w-[93px]" src={logo} alt="logo" />
 
       <div className="md: flex items-center justify-between gap-6">

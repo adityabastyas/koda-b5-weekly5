@@ -40,8 +40,8 @@ function FetchMovies() {
   };
 
   return (
-    <div className="px-[130px] py-[55px]">
-      <div className="flex items-center gap-[20px]">
+    <div className="px-[24px] py-[55px] md:px-[90px] lg:px-[130px]">
+      <div className="flex flex-col items-center gap-[20px] md:flex-row">
         <div className="mb-6">
           <label htmlFor="textSearch">Cari Movie</label>
           <input
@@ -65,22 +65,25 @@ function FetchMovies() {
           >
             All
           </button>
-
-          {GENRES.map((genre) => (
-            <button
-              key={genre.id}
-              onClick={() => setSelectedGenre(genre.id)}
-              className={`rounded px-4 py-2 ${
-                selectedGenre === genre.id ? "bg-blue-600 text-white" : "border"
-              }`}
-            >
-              {genre.name}
-            </button>
-          ))}
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:flex">
+            {GENRES.map((genre) => (
+              <button
+                key={genre.id}
+                onClick={() => setSelectedGenre(genre.id)}
+                className={`rounded px-4 py-2 ${
+                  selectedGenre === genre.id
+                    ? "bg-blue-600 text-white"
+                    : "border"
+                }`}
+              >
+                {genre.name}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
-      <div className="grid gap-[16px] md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid grid-cols-2 gap-[16px] md:grid-cols-3 lg:grid-cols-4">
         {filteredMovies.map((movie) => (
           <div
             key={movie.id}

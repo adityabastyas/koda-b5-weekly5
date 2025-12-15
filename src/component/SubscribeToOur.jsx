@@ -10,7 +10,7 @@ function SubscribeToOur() {
               Subscribe to our newsletter
             </h1>
           </div>
-          <div className='flex flex-col md:flex-row md:justify-center md:gap-[12px]'>
+          <form className='flex flex-col md:flex-row md:justify-center md:gap-[12px]'>
             <input
               className="font-['Mulish', sans-serif] h-[60px]  font-normal text-[16px] text-[#FFFFFF] py-[17px] pl-[20px] pr-[17px] border border-[#D4D4D8] rounded-[9px] mb-[11px]"
               type='text'
@@ -27,7 +27,7 @@ function SubscribeToOur() {
             >
               Subscribe Now
             </a>
-          </div>
+          </form>
         </div>
       </section>
     </>

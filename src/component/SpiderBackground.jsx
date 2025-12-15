@@ -4,6 +4,21 @@ function SpiderBackground() {
       <section>
         <div className="h-screen w-full bg-[url('/SpiderDevice.png')] bg-cover"></div>
         <img className='relative mt-[141px]' src='/spiderSm.png' alt='poster' />
+
+        <div className='mt-6 sm:mt-8'>
+          <h2 className='text-lg sm:text-xl font-bold text-gray-800 mb-3'>
+            Synopsis
+          </h2>
+          <p className='text-sm sm:text-base text-gray-600 leading-relaxed'>
+            Thrilled by his experience with the Avengers, Peter returns home,
+            where he lives with his Aunt May, under the watchful eye of his new
+            mentor Tony Stark. Peter tries to fall back into his normal daily
+            routine - distracted by thoughts of proving himself to be more than
+            just your friendly neighborhood Spider-Man - but when the Vulture
+            emerges as a new villain, everything that Peter holds most important
+            will be threatened.
+          </p>
+        </div>
       </section>
     </>
   );

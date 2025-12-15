@@ -11,13 +11,16 @@ export const fetchMovies = createAsyncThunk("movies/fetchMovies", async () => {
   return data.results;
 });
 
+const initialState = {
+  data: [],
+  loading: false,
+  error: null,
+};
+
 const movieSlice = createSlice({
   name: "movies",
-  initialState: {
-    data: [],
-    loading: false,
-    error: null,
-  },
+  initialState,
+
   reducers: {},
 
   extraReducers: (builder) => {

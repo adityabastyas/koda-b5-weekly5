@@ -50,15 +50,6 @@ function Header() {
               </li>
             </ul>
 
-            {/* <div className="flex flex-col gap-2 md:flex-row md:items-center md:gap-4">
-              <a className="font-semibold text-gray-700 hover:text-amber-700">
-                <Link to="/signin">Sign In</Link>
-              </a>
-              <a className="rounded-md bg-amber-600 px-4 py-2 text-white hover:bg-amber-700">
-                <Link to="/signup">Sign Up</Link>
-              </a>
-            </div> */}
-
             <div className="flex flex-col gap-2 md:flex-row md:items-center md:gap-4">
               {activeUser ? (
                 <>

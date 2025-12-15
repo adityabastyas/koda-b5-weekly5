@@ -4,6 +4,7 @@ import Signup from "./pages/Signup";
 import Home from "./pages/Home";
 import Movie from "./pages/Movie";
 import MovieDetail from "./pages/MovieDetail";
+import NotFound from "./pages/NotFound";
 
 function Router() {
   return (
@@ -22,6 +23,7 @@ function Router() {
           <Route index element={<Movie />} />
           <Route path="/movie/:id" element={<MovieDetail />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
